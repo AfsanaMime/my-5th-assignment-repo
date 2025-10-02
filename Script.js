@@ -10,7 +10,7 @@ const heartBtn = document.getElementById("navbar-heart");
     document.querySelectorAll(".fa-heart").forEach((heart) => {
       heart.addEventListener("click", () => {
         heartCount++;
-        heartBtn.innerHTML = `${heartCount} <img src="/assets/heart.png" class="w-4 h-4">`;
+        heartBtn.innerHTML = `${heartCount} <img src="./assets/heart.png" class="w-4 h-4">`;
       });
     });
     document.querySelectorAll(".copy-btn").forEach((btn) => {
@@ -50,7 +50,7 @@ const heartBtn = document.getElementById("navbar-heart");
         }
 
         coins -= 20;
-        coinBtn.innerHTML = `<img src="/assets/coin.png" class="w-4 h-4"> ${coins}`;
+        coinBtn.innerHTML = `<img src="./assets/coin.png" class="w-4 h-4"> ${coins}`;
         alert(`Calling ${serviceName} at ${number}`);
 
         const li = document.createElement("li");
