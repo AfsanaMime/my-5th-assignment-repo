@@ -7,16 +7,12 @@ const heartBtn = document.getElementById("navbar-heart");
     let heartCount = 0;
     let coins = 100;
     let copyCount = 2;
-
-    // Heart click
     document.querySelectorAll(".fa-heart").forEach((heart) => {
       heart.addEventListener("click", () => {
         heartCount++;
         heartBtn.innerHTML = `${heartCount} <img src="/assets/heart.png" class="w-4 h-4">`;
       });
     });
-
-    // Copy button
     document.querySelectorAll(".copy-btn").forEach((btn) => {
       btn.addEventListener("click", () => {
         const card = btn.closest(".bg-white");
@@ -42,8 +38,6 @@ const heartBtn = document.getElementById("navbar-heart");
         document.body.removeChild(textarea);
       });
     });
-
-    // Call button
     document.querySelectorAll(".call-btn").forEach((btn) => {
       btn.addEventListener("click", () => {
         const card = btn.closest(".bg-white");
@@ -67,8 +61,6 @@ const heartBtn = document.getElementById("navbar-heart");
         historyList.prepend(li);
       });
     });
-
-    // Clear history
     clearHistoryBtn.addEventListener("click", () => {
       historyList.innerHTML = "";
     });
