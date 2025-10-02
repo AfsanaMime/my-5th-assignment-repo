@@ -1,10 +1,4 @@
-
-
-
-
-
-
- const heartBtn = document.getElementById("navbar-heart");
+const heartBtn = document.getElementById("navbar-heart");
     const coinBtn = document.getElementById("navbar-coin");
     const navbarCopyBtn = document.getElementById("navbar-copy");
     const clearHistoryBtn = document.getElementById("clear-history");
@@ -78,3 +72,4 @@
     clearHistoryBtn.addEventListener("click", () => {
       historyList.innerHTML = "";
     });
+

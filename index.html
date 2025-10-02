@@ -1,30 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Emergency Service Directory</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>green earth</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
 <body class="bg-green-50">
 
   <!-- Navbar -->
   <header class="flex items-center justify-between bg-white shadow px-6 py-3">
     <div class="flex items-center gap-3">
       <img src="/assets/logo.png" alt="BD Logo" class="w-10 h-10">
-      <span class="font-bold text-lg leading-tight">
+      <span class="font-bold text-lg leading-tight text-green-800">
         Emergency <br> Service
       </span>
     </div>
     <div class="flex items-center gap-3">
-      <button class="flex items-center gap-1 px-3 py-1 border rounded" id="navbar-heart">
+      <button class="flex items-center gap-1 px-3 py-1 bg-green-100 rounded-full" id="navbar-heart">
         0 <img src="/assets/heart.png" class="w-4 h-4">
       </button>
-      <button class="flex items-center gap-1 px-3 py-1 border rounded" id="navbar-coin">
+      <button class="flex items-center gap-1 px-3 py-1 bg-green-100 rounded-full" id="navbar-coin">
         <img src="/assets/coin.png" class="w-4 h-4"> 100
       </button>
-      <button class="px-3 py-1 border rounded bg-green-100" id="navbar-copy">2 Copy</button>
+      <button class="px-3 py-1  rounded-full bg-green-500" id="navbar-copy">2 Copy</button>
     </div>
   </header>
 
@@ -39,7 +50,7 @@
   </section>
 
   <!-- Main Section -->
-  <main class="grid grid-cols-1 lg:grid-cols-3 gap-6 p-6">
+  <main class="grid grid-cols-1 lg:grid-cols-3 gap-6 p-10">
     <!-- Card Section -->
     <section class="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
       
@@ -129,10 +140,10 @@
           <img src="/assets/ambulance.png" alt="Ambulance" class="w-12 h-12">
           <button class="text-gray-400 hover:text-red-500"><i class="fa-regular fa-heart"></i></button>
         </div>
-        <h2 class="mt-2 font-semibold">Ambulance</h2>
-        <p class="text-sm text-gray-500">অ্যাম্বুলেন্স</p>
-        <p class="text-2xl font-bold">109</p>
-        <span class="bg-gray-100 text-xs px-2 py-1 rounded">Medical</span>
+        <h2 class="mt-2 font-semibold">Anti-Corruption Helpline</h2>
+        <p class="text-sm text-gray-500">Anti-Corruption</p>
+        <p class="text-2xl font-bold">106</p>
+        <span class="bg-gray-100 text-xs px-2 py-1 rounded">Govt.</span>
         <div class="flex gap-2 mt-4">
           <button class="flex-1 border copy-btn py-2 flex items-center justify-center gap-1 text-sm"><i class="fa-regular fa-copy"></i> Copy</button>
           <button class="flex-1 bg-green-500 call-btn text-white rounded py-2 flex items-center justify-center gap-1 text-sm"><i class="fa-solid fa-phone"></i> Call</button>
@@ -142,13 +153,13 @@
       <!-- Card 7 -->
       <div class="bg-white rounded-xl shadow p-4">
         <div class="flex justify-between items-start">
-          <img src="/assets/Bangladesh-Railway.png" alt="Railway" class="w-12 h-12">
+          <img src="/assets/emergency.png" alt="Railway" class="w-12 h-12">
           <button class="text-gray-400 hover:text-red-500"><i class="fa-regular fa-heart"></i></button>
         </div>
-        <h2 class="mt-2 font-semibold">Railway Helpline</h2>
-        <p class="text-sm text-gray-500">রেলওয়ে হেল্পলাইন</p>
+        <h2 class="mt-2 font-semibold">Electricity Helpline</h2>
+        <p class="text-sm text-gray-500">Electricity Outage</p>
         <p class="text-2xl font-bold">131</p>
-        <span class="bg-gray-100 text-xs px-2 py-1 rounded">Railway</span>
+        <span class="bg-gray-100 text-xs px-2 py-1 rounded">Electricity </span>
         <div class="flex gap-2 mt-4">
           <button class="flex-1 border copy-btn py-2 flex items-center justify-center gap-1 text-sm"><i class="fa-regular fa-copy"></i> Copy</button>
           <button class="flex-1 bg-green-500 call-btn text-white rounded py-2 flex items-center justify-center gap-1 text-sm"><i class="fa-solid fa-phone"></i> Call</button>
@@ -158,13 +169,13 @@
       <!-- Card 8 -->
       <div class="bg-white rounded-xl shadow p-4">
         <div class="flex justify-between items-start">
-          <img src="/assets/brac.png" alt="Women" class="w-12 h-12">
+          <img src="./assets/brac.png" alt="Women" class="w-12 h-12">
           <button class="text-gray-400 hover:text-red-500"><i class="fa-regular fa-heart"></i></button>
         </div>
-        <h2 class="mt-2 font-semibold">Women Helpline</h2>
-        <p class="text-sm text-gray-500">নারী সহায়তা</p>
+        <h2 class="mt-2 font-semibold">Brac Helpline</h2>
+        <p class="text-sm text-gray-500">Brac Helpline</p>
         <p class="text-2xl font-bold">10921</p>
-        <span class="bg-gray-100 text-xs px-2 py-1 rounded">Women</span>
+        <span class="bg-gray-100 text-xs px-2 py-1 rounded">NGO</span>
         <div class="flex gap-2 mt-4">
           <button class="flex-1 border copy-btn py-2 flex items-center justify-center gap-1 text-sm"><i class="fa-regular fa-copy"></i> Copy</button>
           <button class="flex-1 bg-green-500 call-btn text-white rounded py-2 flex items-center justify-center gap-1 text-sm"><i class="fa-solid fa-phone"></i> Call</button>
@@ -174,18 +185,20 @@
       <!-- Card 9 -->
       <div class="bg-white rounded-xl shadow p-4">
         <div class="flex justify-between items-start">
-          <img src="/assets/emergency.png" alt="Anti-Corruption" class="w-12 h-12">
+          <img src="/assets/Bangladesh-Railway.png" alt="Anti-Corruption" class="w-12 h-12">
           <button class="text-gray-400 hover:text-red-500"><i class="fa-regular fa-heart"></i></button>
         </div>
-        <h2 class="mt-2 font-semibold">Anti-Corruption</h2>
-        <p class="text-sm text-gray-500">দুর্নীতি দমন</p>
+        <h2 class="mt-2 font-semibold">Bangladesh Railway Helpline </h2>
+        <p class="text-sm text-gray-500">Bangladesh Railway></p>
         <p class="text-2xl font-bold">106</p>
-        <span class="bg-gray-100 text-xs px-2 py-1 rounded">Law</span>
+        <span class="bg-gray-100 text-xs px-2 py-1 rounded">Travel</span>
         <div class="flex gap-2 mt-4">
           <button class="flex-1 border copy-btn py-2 flex items-center justify-center gap-1 text-sm"><i class="fa-regular fa-copy"></i> Copy</button>
           <button class="flex-1 bg-green-500 call-btn text-white rounded py-2 flex items-center justify-center gap-1 text-sm"><i class="fa-solid fa-phone"></i> Call</button>
         </div>
       </div>
+
+      
 
     </section>
 
@@ -195,7 +208,7 @@
         <h2 class="font-bold flex items-center gap-2">
           <i class="fa-solid fa-clock-rotate-left"></i> Call History
         </h2>
-        <button class="text-sm bg-green-500 text-white px-3 py-1 rounded" id="clear-history">Clear</button>
+        <button class="text-sm bg-green-500 text-white px-3 py-1 rounded-full" id="clear-history">Clear</button>
       </div>
       <ul class="space-y-3 text-sm text-gray-700" id="history-list">
         <!-- Dynamic call history -->
@@ -203,6 +216,6 @@
     </section>
   </main>
 
-  <script src="script.js"></script>
+  <script src="/Script.js"></script>
 </body>
 </html>
