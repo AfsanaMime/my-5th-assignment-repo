@@ -64,4 +64,3 @@ const heartBtn = document.getElementById("navbar-heart");
     clearHistoryBtn.addEventListener("click", () => {
       historyList.innerHTML = "";
     });
-
